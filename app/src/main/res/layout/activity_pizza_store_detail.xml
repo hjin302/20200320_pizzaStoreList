@@ -8,6 +8,8 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:paddingTop="50dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     tools:context=".PizzaStoreDetailActivity">
 
     <LinearLayout
@@ -37,6 +39,7 @@
             />
 
         <TextView
+            android:id="@+id/storeNameTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="피자 가게 이름 자리"
@@ -65,6 +68,7 @@
                 />
 
             <TextView
+                android:id="@+id/storePhoneTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="전화번호 자리"
