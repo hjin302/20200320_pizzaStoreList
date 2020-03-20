@@ -20,6 +20,7 @@
         android:gravity="center">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storeLogoImg"
             android:layout_width="150dp"
             android:layout_height="150dp"
             app:civ_border_width="2dp"
@@ -85,6 +86,7 @@
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/callBtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="전화걸기"
