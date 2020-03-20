@@ -40,7 +40,9 @@ public class PizzaStoreDetailActivity extends BaseActivity {
         binding.storeLogoImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent intent = new Intent(mContext, LogoViewActivity.class);
+                intent.putExtra("logoUrl", store.getLogoUrl());
+                startActivity(intent);
             }
         });
 
@@ -56,11 +58,11 @@ public class PizzaStoreDetailActivity extends BaseActivity {
                     @Override
                     public void onPermissionGranted() {
 //                        허가가 떨어진 상황 => 전화걸기 코드 실행
-//                        String phoneNumUri = String.format("tel:%s", store.getPhoneNum());
-//
-//                        Uri uri = Uri.parse(phoneNumUri);
-//                        Intent intent = new Intent(Intent.ACTION_CALL, uri);
-//                        startActivity(intent);
+                        String phoneNumUri = String.format("tel:%s", store.getPhoneNum());
+
+                        Uri uri = Uri.parse(phoneNumUri);
+                        Intent intent = new Intent(Intent.ACTION_CALL, uri);
+                        startActivity(intent);
                     }
 
                     @Override
