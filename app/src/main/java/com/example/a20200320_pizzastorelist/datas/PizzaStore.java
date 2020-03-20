@@ -5,6 +5,21 @@ import java.io.Serializable;
 public class PizzaStore implements Serializable {
     private String stroeName;
     private String logoUrl;
+    private String phoneNum;
+
+    public PizzaStore(String stroeName, String logoUrl, String phoneNum) {
+        this.stroeName = stroeName;
+        this.logoUrl = logoUrl;
+        this.phoneNum = phoneNum;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
 
     public String getStroeName() {
         return stroeName;
